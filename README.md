@@ -1,7 +1,7 @@
-# 🌡️ Sistem Kontrol Kipas Berbasis Fuzzy Mamdani (ESP32 + Blynk)
+# 🌡️ Sistem Kontrol Kipas Berbasis Fuzzy (ESP32 + Blynk)
 
 ## 📌 Deskripsi Proyek
-Proyek ini merupakan sistem **kontrol kecepatan kipas otomatis** berbasis **logika fuzzy Mamdani** menggunakan **ESP32**, **sensor DHT11**, dan **platform Blynk IoT**.
+Proyek ini merupakan sistem **kontrol kecepatan kipas otomatis** berbasis **logika fuzzy ** menggunakan **ESP32**, **sensor DHT11**, dan **platform Blynk IoT**.
 
 Sistem membaca **suhu** dan **kelembaban**, kemudian menentukan kondisi kipas:
 - Kipas Mati
@@ -13,12 +13,12 @@ berdasarkan **aturan fuzzy (rule base)**.
 ---
 
 ## 🧠 Metode yang Digunakan
-- **Logika Fuzzy Mamdani**
+- **Logika Fuzzy **
 - Inferensi menggunakan:
   - **AND → fungsi MIN**
   - **OR → fungsi MAX**
 - Defuzzifikasi menggunakan:
-  - **Centroid (Weighted Average sederhana)**
+  - **Weighted Average**
 
 ---
 
@@ -59,7 +59,7 @@ berdasarkan **aturan fuzzy (rule base)**.
 
 ---
 
-## 📋 Tabel Rule Base Fuzzy Mamdani
+## 📋 Tabel Rule Base Fuzzy 
 
 | Rule | Suhu   | Kelembaban | Output Kipas |
 | ---- | ------ | ---------- | ------------ |
@@ -76,7 +76,7 @@ berdasarkan **aturan fuzzy (rule base)**.
 
 ---
 
-## ⚙️ Inferensi Fuzzy Mamdani
+## ⚙️ Inferensi Fuzzy 
 
 ### 🔹 AND (Operator MIN)
 Digunakan **di dalam satu rule**.
@@ -98,7 +98,7 @@ Digunakan **di dalam satu rule**.
 
 **Keterangan Gambar:**
 - Nilai suhu dan kelembaban ditampilkan secara real-time
-- Status kipas berubah otomatis berdasarkan hasil inferensi fuzzy Mamdani
+- Status kipas berubah otomatis berdasarkan hasil inferensi fuzzy 
 - Data diperbarui setiap 1 detik
 
 ### Hasil Alat
